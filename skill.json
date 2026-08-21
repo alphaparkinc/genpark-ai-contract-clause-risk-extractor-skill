@@ -1,0 +1,35 @@
+{
+  "name": "genpark-ai-contract-clause-risk-extractor-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - AI contract analyzer that extracts risk clauses, scores legal exposure, and generates negotiation recommendations.",
+  "author": "genpark",
+  "category": "legaltech",
+  "tags": [
+    "contract-analysis",
+    "legal-ai",
+    "clause-extraction",
+    "risk-scoring",
+    "legaltech"
+  ],
+  "inputs": {
+    "contract_text": {
+      "type": "string"
+    },
+    "contract_type": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "risk_clauses_found": {
+      "type": "array"
+    },
+    "overall_risk_score": {
+      "type": "number"
+    },
+    "recommended_action": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
